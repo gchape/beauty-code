@@ -1,10 +1,10 @@
-package ge.beauty_code.backend.dto;
+package ge.beauty_code.backend.model.items;
 
 import ge.beauty_code.backend.model.ProductCategory;
 
 import java.util.List;
 
-public record ProductDto(
+public record ProductItem(
         String id,
         String imgUrl,
         String badge,

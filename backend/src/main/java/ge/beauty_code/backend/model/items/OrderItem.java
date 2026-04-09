@@ -1,8 +1,8 @@
-package ge.beauty_code.backend.dto;
+package ge.beauty_code.backend.model.items;
 
 import java.time.LocalDateTime;
 
-public record OrderDto(
+public record OrderItem(
         String id,
         String summary,
         LocalDateTime date
