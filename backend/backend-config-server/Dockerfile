@@ -8,5 +8,5 @@ RUN mvn -q -DskipTests clean package
 FROM gcr.io/distroless/java25-debian13:nonroot
 WORKDIR /app
 COPY --from=builder /app/target/*.jar app.jar
-EXPOSE 8080
-ENTRYPOINT ["java", "-Xms128m", "-Xmx384m", "-jar", "app.jar"]
+EXPOSE 8888
+ENTRYPOINT ["java", "-Xms128m", "-Xmx256m", "-jar", "app.jar"]
